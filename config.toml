@@ -1,0 +1,40 @@
+theme = "kanagawa"
+
+[editor]
+bufferline = "always"
+true-color = true
+line-number = "relative"
+auto-format = false
+rulers = [80, 100, 120]
+
+[editor.cursor-shape]
+insert = "bar"
+
+[editor.file-picker]
+hidden = false
+
+[editor.indent-guides]
+render = true
+character = '┆'
+
+[editor.whitespace.render]
+space = "all"
+tab = "all"
+newline = "all"
+
+[editor.whitespace.characters]
+space = "·"
+nbsp = "⍽"
+tab = "→"
+newline = "⏎"
+tabpad = "·"
+
+[editor.terminal]
+command = "xterm"
+args = ["-e"]
+
+[keys.insert]
+"j" = {"k" = "normal_mode", "K" = "normal_mode"}
+"J" = {"k" = "normal_mode", "K" = "normal_mode"}
+"C-backspace" = "delete_word_backward"
+"C-[" = "normal_mode"
